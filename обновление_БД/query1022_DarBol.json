@@ -1,0 +1,98 @@
+[
+  {
+    "actual": "old",
+    "report": 1022,
+    "displayedFieldsArr": [
+      "id",
+      "city_name",
+      "office",
+      "responsible",
+      "gruppa",
+      "department_name",
+      "positions",
+      "candidate_fio",
+      "attraction_form",
+      "attraction_source",
+      "date_create",
+      "current_stage_date",
+      "current_stage",
+      "stage_date",
+      "stage",
+      "status",
+      "title",
+      "max_note",
+      "closed_date",
+      "is_archived"
+    ],
+    "filterQuery": [
+      {
+        "field": "date_create",
+        "values": [
+          "2024-03-01 TO 2024-04-01"
+        ],
+        "type": "date"
+      },
+      {
+        "field": "is_archived",
+        "values": [
+          "Нет"
+        ]
+      }
+    ]
+  },
+  {
+    "actual": "old",
+    "report": 374,
+    "displayedFieldsArr": [
+      "city",
+      "type_position",
+      "status_priority",
+      "user_status",
+      "filial_franch",
+      "form_attraction",
+      "source_attraction",
+      "date_vihoda_na_raboty",
+      "hr_manager_fio"
+    ],
+    "filterQuery": [
+      {
+        "field": "date_vihoda_na_raboty",
+        "values": [
+          "2024-03-01 TO 2024-04-01"
+        ],
+        "type": "date"
+      },
+      {
+        "field": "status_priority",
+        "values": [
+          "Да"
+        ]
+      },
+      {
+        "field": "type_position",
+        "values": [
+          "Специалист отдела продаж"
+        ]
+      },
+      {
+        "field": "user_status",
+        "values": [
+          "Активен",
+          "Перевод",
+          "Уволен"
+        ]
+      },
+      {
+        "field": "form_attraction",
+        "values": [
+          "",
+          null,
+          "Не указано",
+          "прямой (активный) поиск",
+          "реферальный канал",
+          "традиционный (пассивный) поиск"
+        ]
+      }
+    ]
+  }
+]

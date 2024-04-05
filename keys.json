@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hr-calc-30717",
+  "private_key_id": "fcf2e8e8da508b88b84609918b75b3b05b82ab32",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/bF+9TlUDgm3y\nUxvUyOhXlI6V5OjsEeZXfGtQPNak/Rga7ldlJcOT/49cxZVNYyYxArUFUq9F06YK\n/n8t6r+jBYg7ES85g3OwXm5HTqfpEISJ6GXBNcUwLJW9msf8x5vhBimJ0njOFccJ\nmTkYAanzUXu0t/Lu6/MD1W0oHra2ZC/N1uc+SL+PQhXWBazyw+6QLbw6oKl7rcIR\nEuNZsjSaAWKbL0bZ49VN0V70Vx9r8ZRQcxG1nH4rjR6A5Bi0kV2ULiQ8sKAhARsf\nO9j/5xji/a1d/RtokBKz3qhc7mNxOClBFnjGutKOg95PL0jfnOqcwfn4ONHVoJOH\nPyviIX2xAgMBAAECggEAEUO+K3iV/KU2CF3hi+KmPfE/85n76KrBSnuwwWxd9ESA\nI5GtNTS05ojCo9yNgjd35Cy5KeaSuKqwS5viLusrZzx3qdLQyRBSOK0o/L/F2iSW\nEkrGaVN8WkNzKpt7/7r7E/kLzwqPaxBAwtyxxGNbXNQpDZwXn4qNVk0DYCkg/o3I\n0GHt9u27ZpKP03s92fldUEQ2KspAjx/8sAiZQJEM0z0Jaypu6HLv9QVcui3/CpgK\n3UwEVYFEA0vZY5mdB8690U+tUWNNO1FSBgaCU6606nsEzyamb4BClUomdoWnlDp+\nCMVMh4OcwyfS20mRfCgHcMCbVnp7IeUWJswYP4+irwKBgQD4Xwm7AXHkiKEeMHqx\nPHWjnm8Ndyem2Tb5VCJSkXxOSRfmH6FkIG9f91QerWWM0bNVLOJXL2kdxBGU1QVw\nknCdOlYFtLlUhehhJjZTWoJQm0dWIW3+WocV6h4nKyqq5n3K2Q/ThFjCJQff6ep/\nQTlu++gAjwA9PquaxTP1lFY9gwKBgQDFTYzdFkUo7Y3BpOA5pMySubjNdMCjPAwt\nPRyDXPfmABnbaPkrVtnsjSA1tSTt2nnWEV94zp5Q8JSBX1cgPlGBkgSWDOFRQK8f\nA+BpWVMsJUTa75OklKZFvCR2DIjDkcb7ez+fJ0dzz+FwvLkBlmlj/YiRkiSF4HPG\nai91/CUFuwKBgFEEn2XzCLXlo7j3U25xLGadDdi0n6ibfoVCXpfUgVoAGd2lP74r\nnmkNgtEm+tM+rGMCayrJel6NULbd7hJUkouXNexSkYnyzGS0VFBIW+3zWQfNi9XG\nrf4GCqP4PsjUuv/qYnE64MEj1zfBVA8CtbtwTLOx8gAIa23nGhXnt2IFAoGBALwh\nOAHPrF5cNODB77PHOfFl+Zqeitia9xljvf5b9VxwGDeoHn5+sAjogB/1+6J4wdem\ndRxiF38iBthdKlxqT5l2u7y/x1CMlu7B6YdKTw428zK3YlZ6DxlLTpDpXrbsF4nP\neViuQWlifJncuaOT4iYfp8r2SLEG1h4JPfwIUtzlAoGBANBxEzfupvBQ7J05Jy2w\nMBeKuuBJHDXk14619bfsAWKTcR/xM63vNW/Pr2lhYpxe8LMZk39guuXGo0WIfAuZ\nyih5TUmmsy97/Yey8+A9gM9vp22OI7hGkG7gGTacS9xjhhQFKg6kpmwiLUDcQb/I\nzYFfViXcYZYVOPE/Yfdy5HU3\n-----END PRIVATE KEY-----\n",
+  "client_email": "almiko@hr-calc-30717.iam.gserviceaccount.com",
+  "client_id": "110594778797493970837",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/almiko%40hr-calc-30717.iam.gserviceaccount.com"
+}

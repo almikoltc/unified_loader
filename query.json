@@ -1,0 +1,128 @@
+[
+  {
+    "actual": "old",
+    "DBname": "income_City",
+    "report": 232,
+    "displayedFieldsArr": [
+      "u_fio",
+      "u_id",
+      "status_priority",
+      "ott_created",
+      "type_name"
+    ],
+    "filterQuery": [
+      {
+        "field": "ott_created",
+        "values": [
+          "2023-01-01 TO 2030-01-01"
+        ],
+        "type": "date"
+      },
+      {
+        "field": "type_name",
+        "values": [
+          "Новостройки",
+          "Покупка вторичная",
+          "Покупка загородной",
+          "Покупка коммерческой"
+        ]
+      },
+      {
+        "field": "source",
+        "values": [
+          "Anh",
+          "Banks",
+          "Client_Mobile_APP",
+          "Email",
+          "OtherSites",
+          "Regional",
+          "SMM",
+          "Space interregional",
+          "Web",
+          "vkApp",
+          "Мероприятие",
+          "Мобильная_версия",
+          "Пешеход",
+          "Подменный номер",
+          "Риелтор",
+          "Телефон",
+          "ЦУП",
+          "Чат"
+        ]
+      },
+      {
+        "field": "ot_status",
+        "values": [
+          "",
+          "закрыта",
+          "на задатке",
+          "открыта",
+          "свободная заявка"
+        ]
+      }
+    ]
+  },
+  {
+    "actual": "old",
+    "DBname": "income_City",
+    "report": 232,
+    "displayedFieldsArr": [
+      "u_fio",
+      "u_id",
+      "status_priority",
+      "ott_created",
+      "type_name"
+    ],
+    "filterQuery": [
+      {
+        "field": "ott_created",
+        "values": [
+          "2023-01-01 TO 2030-01-01"
+        ],
+        "type": "date"
+      },
+      {
+        "field": "type_name",
+        "values": [
+          "Новостройки",
+          "Покупка вторичная",
+          "Покупка загородной",
+          "Покупка коммерческой"
+        ]
+      },
+      {
+        "field": "source",
+        "values": [
+          "Anh",
+          "Banks",
+          "Client_Mobile_APP",
+          "Email",
+          "OtherSites",
+          "Regional",
+          "SMM",
+          "Space interregional",
+          "Web",
+          "vkApp",
+          "Мероприятие",
+          "Мобильная_версия",
+          "Пешеход",
+          "Подменный номер",
+          "Риелтор",
+          "Телефон",
+          "ЦУП",
+          "Чат"
+        ]
+      },
+      {
+        "field": "ot_status",
+        "values": [
+          "",
+          "закрыта",
+          "на задатке",
+          "открыта",
+          "свободная заявка"
+        ]
+      }
+    ]
+  }
+]
