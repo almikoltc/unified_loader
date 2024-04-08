@@ -11,6 +11,7 @@ let session = new googleSh();
 
 let dbFormat = (arr) => {
   return arr
+    .map(item => item.filter(el => el[0] !== '' || el[0] !== 'null'))
     .map(item => item.map(el => el == '' ? 'null' : el))
     .map(item => item.length == 8 ? item : [...item, 0])
     .map(item => "('" + item.join("','") + "')")
@@ -19,6 +20,8 @@ let dbFormat = (arr) => {
 
 let dbFormat1 = (arr, strLength) => {
   return arr
+    // .filter(item => item[])
+    .map(item => item.filter(el => el[0] !== '' || el[0] !== 'null'))
     .map(item => item.map(el => el == '' ? 'null' : el))
     .map(item => setLength(item, strLength))
     .map(item => "('" + item.join("','") + "')")
@@ -43,13 +46,13 @@ pg_cl.connect();
 
 let res = await session.getData('1N2qbjUnp2el3IXV8d_xniv5zd6nEiL8EuGa3aQOF9fw', 'Data!A2:H');
 let res1 = await session.getData('1gqIm95L2SCx8SayzvE_CwQx32ttNgFwjbsyR50BNf08', 'Data!A2:H');
+debugger;
 await pg_cl.query(`TRUNCATE public.making_deals`);
 await pg_cl.query(`INSERT INTO public.making_deals VALUES ${dbFormat(res, 8)}`); console.log('Далающие сделки ч1');
 await pg_cl.query(`INSERT INTO public.making_deals VALUES ${dbFormat(res1, 8)}`); console.log('Далающие сделки ч2');
 
 res = await session.getData('1N2qbjUnp2el3IXV8d_xniv5zd6nEiL8EuGa3aQOF9fw', 'Data численность!A2:G');
 res1 = await session.getData('1gqIm95L2SCx8SayzvE_CwQx32ttNgFwjbsyR50BNf08', 'Data численность!A2:G');
-debugger;
 await pg_cl.query(`TRUNCATE public.making_deals_all_employees`);
 await pg_cl.query(`INSERT INTO public.making_deals_all_employees VALUES ${dbFormat1(res, 7)}`); console.log('Общ численность ч1');
 await pg_cl.query(`INSERT INTO public.making_deals_all_employees VALUES ${dbFormat1(res1, 7)}`); console.log('Общ численность ч2');

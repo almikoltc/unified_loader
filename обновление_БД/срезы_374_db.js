@@ -22,11 +22,11 @@ let head = ['prefix', 'list_name', 'city', 'hr_manager_id', 'hr_manager_name', '
 // await pg_cl.query(`TRUNCATE public.empty_tab`);
 
 // let m = new Map([
-//   ["2023-12-01", "1L5pO4KPIIxCigWmlHmB2h7p1qlqT-w3aNc282tzyGbo"],
-//   ["2024-01-01", "15ZwG-axlluo3TpESMX_VFioqsMSWsJ1dNvL2NO86uTA"],
-//   ["2024-02-01", "1Y7TKRiiLDeiUmHMoQSGN-pXbtRfcivfJ2JVFU8jWncw"],
-//   ["2024-03-01", "1fyXAwMvY-EKDYGkuDWQo4mf8W_zBvqQt6iguURbli2s"],
-//   ["2024-04-01", "1FSDrLkAvT4060i4YwWCYu_Muboi-4ymkV3-4IsF2xLM"]
+//   ["2023-12-01 0:00:00", "1L5pO4KPIIxCigWmlHmB2h7p1qlqT-w3aNc282tzyGbo"],
+//   ["2024-01-01 0:00:00", "15ZwG-axlluo3TpESMX_VFioqsMSWsJ1dNvL2NO86uTA"],
+//   ["2024-02-01 0:00:00", "1Y7TKRiiLDeiUmHMoQSGN-pXbtRfcivfJ2JVFU8jWncw"],
+//   ["2024-03-01 0:00:00", "1fyXAwMvY-EKDYGkuDWQo4mf8W_zBvqQt6iguURbli2s"],
+//   ["2024-04-01 0:00:00", "1FSDrLkAvT4060i4YwWCYu_Muboi-4ymkV3-4IsF2xLM"]
 // ]);
 
 // for (let [key, value] of m) {
@@ -42,17 +42,17 @@ let head = ['prefix', 'list_name', 'city', 'hr_manager_id', 'hr_manager_name', '
 //   await pg_cl.query(`INSERT INTO public.empty_tab (${head.join(',').toLowerCase()}) VALUES ${date}`);
 // }
 
-debugger;
 
 
 let q = await pg_cl.query(`select * from public.empty_tab`);
 
+// debugger;
 
-// let sourse = q.rows.filter(item => item['prefix'] === '2024-03-01');
+// let sourse = q.rows.filter(item => item['prefix'] === '2024-03-01 0:00:00');
 // let sourseObj = {};
 // sourse.map(item => sourseObj[item['employee_id']] = item);
 
-let destination = q.rows.filter(item => item['prefix'] === '2024-04-01'/*  || item['prefix'] === '2024-01-01' || item['prefix'] === '2024-02-01' */);
+let destination = q.rows.filter(item => item['prefix'] === '2024-04-01 0:00:00'/*  || item['prefix'] === '2024-01-01' || item['prefix'] === '2024-02-01' */);
 
 
 let i = 0;
@@ -79,14 +79,7 @@ for (let destinationItem of destination) {
   res = session.objToSQLRow(head, session.rowToObject(head, [res]));
 
   await pg_cl.query(`INSERT INTO public.slice_374 (${head.join(',').toLowerCase()}) VALUES ${res}`);
-  // debugger;
-  // return destinationItem;
 }
-
-// destination = destination.map(destinationItem => {
-// });
-
-
 
 // await pg_cl.query(`TRUNCATE public.sl_374`);
 

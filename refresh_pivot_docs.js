@@ -41,6 +41,11 @@ await session.clearRange("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "Скр
 await session.setData("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "СкрМОП!A1", sheets);
 
 /* обновление Выполнение планов 2024 */
+
+// sheets = await session.getData('1e9tOssU2GsRnzftOCFctZxfw3N_PSnE_6vg0I28MKsU', "Свод!A:Z");
+// await session.clearRange("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "Свод фактических показателей ОП+ОА");
+// await session.setData("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "Свод фактических показателей ОП+ОА!A1", sheets);
+
 sheets = await session.getData('1e9tOssU2GsRnzftOCFctZxfw3N_PSnE_6vg0I28MKsU', "Свод!A:Z");
 await session.clearRange("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "Свод фактических показателей ОП+ОА");
 await session.setData("1lmyxik-WU4B2TZeEJ6QjXF-5oMVHY5CjyW291yZIpFE", "Свод фактических показателей ОП+ОА!A1", sheets);
